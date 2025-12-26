@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TaskFlow</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1 class="logo">TaskFlow</h1>
+    <nav>
+      <a href="#features">Features</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h2>Manage Your Tasks Easily</h2>
+    <p>A simple tool to organize your daily work efficiently.</p>
+    <button onclick="showMessage()">Get Started</button>
+  </section>
+
+  <!-- Features -->
+  <section class="features" id="features">
+    <div class="feature">
+      <h3>Simple</h3>
+      <p>Easy to use interface for everyone.</p>
+    </div>
+    <div class="feature">
+      <h3>Fast</h3>
+      <p>Quick access to all your tasks.</p>
+    </div>
+    <div class="feature">
+      <h3>Organized</h3>
+      <p>Keep your work structured and clear.</p>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section class="contact" id="contact">
+    <h2>Contact Us</h2>
+    <form onsubmit="submitForm(event)">
+      <input type="text" id="name" placeholder="Your Name">
+      <input type="email" id="email" placeholder="Your Email">
+      <button type="submit">Submit</button>
+      <p id="formMsg"></p>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 TaskFlow</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
